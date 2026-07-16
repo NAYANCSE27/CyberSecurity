@@ -39,7 +39,7 @@ I believe the only way to truly secure a system is to understand it from the ker
 
 | Date | Day # | Topic Covered (Core Concept) | Lab Completed (Hands-On) | Key Takeaway |
 | :--- | :--- | :--- | :--- | :--- |
-| [16/07/2026] | 1 | Career Paths & CIA Triad | Installed VirtualBox, Kali, Git, Wireshark; Created Repos | Built my cybersecurity workspace; created this README. |
+| [16/07/2026] | 1 | Career Paths & CIA Triad | Installed VirtualBox, Kali, Git, Wireshark; Created Repos | Built my cybersecurity workspace; created this README. [Resource's for Cybersecurity](https://github.com/Hamed233/Cybersecurity-Mastery-Roadmap)|
 | [17/07/2026] | 2 | Linux Filesystem (`pwd`, `ls`, `cp`, `mv`) | THM: Linux Fundamentals Part 1 | Navigated and manipulated files entirely from the terminal. |
 | ... | ... | ... | ... | ... |
 | *[Ongoing: I will update this table daily for 168 days]* | | | | |
