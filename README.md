@@ -1,7 +1,7 @@
 # 🛡️ Zero-to-Hired Cybersecurity Roadmap (2026)
 
 ## 📌 Who Am I?
-I am an aspiring cybersecurity professional transitioning from **[Your Current Role/Field, e.g., IT Support / Recent Graduate / Career Changer]** into the world of Defensive Security. 
+I am an aspiring cybersecurity professional transitioning from **[Lecturer]** into the world of Defensive Security. 
 
 I am not just a passive learner; I am a builder and a hunter. I possess a foundational understanding of how computers talk to each other and how to instruct them with code, but my real drive is understanding how they break—and how to stop it. I approach this transition with the discipline of an athlete, committing 3 focused hours daily to hands-on, battle-hardened training.
 
@@ -39,8 +39,8 @@ I believe the only way to truly secure a system is to understand it from the ker
 
 | Date | Day # | Topic Covered (Core Concept) | Lab Completed (Hands-On) | Key Takeaway |
 | :--- | :--- | :--- | :--- | :--- |
-| [Date] | 1 | Career Paths & CIA Triad | Installed VirtualBox, Kali, Git, Wireshark; Created Repos | Built my cybersecurity workspace; created this README. |
-| [Date] | 2 | Linux Filesystem (`pwd`, `ls`, `cp`, `mv`) | THM: Linux Fundamentals Part 1 | Navigated and manipulated files entirely from the terminal. |
+| [16/07/2026] | 1 | Career Paths & CIA Triad | Installed VirtualBox, Kali, Git, Wireshark; Created Repos | Built my cybersecurity workspace; created this README. |
+| [17/07/2026] | 2 | Linux Filesystem (`pwd`, `ls`, `cp`, `mv`) | THM: Linux Fundamentals Part 1 | Navigated and manipulated files entirely from the terminal. |
 | ... | ... | ... | ... | ... |
 | *[Ongoing: I will update this table daily for 168 days]* | | | | |
 
@@ -77,9 +77,9 @@ I believe the only way to truly secure a system is to understand it from the ker
 ---
 
 ## 🔗 Connect & Follow My Journey
-- **GitHub:** \[https://github.com/NAYANCSE27]
+- **GitHub:** [GitHub](https://github.com/NAYANCSE27)
 - **LinkedIn:** [LinkedIn](https://www.linkedin.com/in/mehadi-hasan-5ab2591a1/)
-- **Portfolio:** [Link to your main repository]
+- **Portfolio:** [Nayan's Portfolio](https://nayancse27.github.io/personal-website/)
 
 ---
 *"Consistency beats intensity. Showing up every single day is the ultimate hack."*
