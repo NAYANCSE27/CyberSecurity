@@ -22,10 +22,10 @@ Each day ends with a **Deliverable** — something committed to your `soc-journe
 
 # Chapter 1 — Month 1: Build the Foundation
 
-**Chapter Theme:** Everything in cybersecurity starts with understanding how computers actually work.
-**Mindset Shift:** Stop being a GUI user. Become a systems operator who thinks in files, packets, and permissions.
-**Skill Target:** Linux CLI fluency, TCP/IP mastery, Windows/AD fundamentals, a working home lab.
-**Crown Jewel Project:** A 4-VM home lab (Kali, Windows 10, Ubuntu Server, pfSense) with a network topology diagram and 3 annotated Wireshark packet captures, published on GitHub.
+- **Chapter Theme:** Everything in cybersecurity starts with understanding how computers actually work.
+- **Mindset Shift:** Stop being a GUI user. Become a systems operator who thinks in files, packets, and permissions.
+- **Skill Target:** Linux CLI fluency, TCP/IP mastery, Windows/AD fundamentals, a working home lab.
+- **Crown Jewel Project:** A 4-VM home lab (Kali, Windows 10, Ubuntu Server, pfSense) with a network topology diagram and 3 annotated Wireshark packet captures, published on GitHub.
 
 ---
 
