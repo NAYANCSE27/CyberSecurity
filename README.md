@@ -77,8 +77,8 @@ I believe the only way to truly secure a system is to understand it from the ker
 ---
 
 ## 🔗 Connect & Follow My Journey
-- **GitHub:** \[https://github.com/NAYANCSE27\]
-- **LinkedIn:** [Link to your profile]
+- **GitHub:** \[https://github.com/NAYANCSE27]
+- **LinkedIn:** [LinkedIn](https://www.linkedin.com/in/mehadi-hasan-5ab2591a1/)
 - **Portfolio:** [Link to your main repository]
 
 ---
