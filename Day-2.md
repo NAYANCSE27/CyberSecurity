@@ -5,7 +5,7 @@
 > **Week:** 1  
 > **Day:** 2 - Linux File System  
 > **Platform:** Kali Linux (VirtualBox)  
-> **Date:** YYYY-MM-DD
+> **Date:** 2026-07-17
 
 ---
 
