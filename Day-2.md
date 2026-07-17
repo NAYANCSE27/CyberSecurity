@@ -71,366 +71,52 @@ CyberLab/
 # Linux Commands Documentation
 
 ---
-
-## 1. pwd
-
-### Purpose
-
-Displays the current working directory.
-
-### Syntax
-
-```bash
-pwd
-```
-
-### Example
-
-```bash
-pwd
-```
-
-### Output
-
-```text
-/home/kali/CyberLab
-```
-
-### Notes
-
-- Shows the absolute path.
-- Useful for verifying your current location.
+| **#** | **Command** | **Purpose**                                | **Syntax**                    | **Example**             | **Expected Output**                               | **Notes**                                               |
+| :---: | :---------- | :----------------------------------------- | :---------------------------- | :---------------------- | :------------------------------------------------ | :------------------------------------------------------ |
+|   1   | `pwd`       | Display the current working directory.     | `pwd`                         | `pwd`                   | `/home/kali/CyberLab`                             | Shows the absolute path of the current directory.       |
+|   2   | `ls`        | List files and directories.                | `ls [options]`                | `ls -la`                | Displays files with permissions and hidden files. | `-l` = long listing, `-a` = hidden files.               |
+|   3   | `cd`        | Change the current directory.              | `cd <directory>`              | `cd reports`            | Changes to the `reports` directory.               | `cd ..` moves one level up.                             |
+|   4   | `mkdir`     | Create a new directory.                    | `mkdir <directory>`           | `mkdir backup`          | Creates a directory named `backup`.               | Use `mkdir -p` to create nested directories.            |
+|   5   | `touch`     | Create an empty file.                      | `touch <filename>`            | `touch notes.txt`       | Creates `notes.txt`.                              | Can also update the timestamp of an existing file.      |
+|   6   | `cp`        | Copy files or directories.                 | `cp <source> <destination>`   | `cp notes.txt backup/`  | Copies `notes.txt` to `backup/`.                  | Use `-r` to copy directories.                           |
+|   7   | `mv`        | Move or rename files/directories.          | `mv <source> <destination>`   | `mv notes.txt reports/` | Moves the file to `reports/`.                     | Also used for renaming files.                           |
+|   8   | `rm`        | Remove files or directories.               | `rm <file>`                   | `rm notes.txt`          | Deletes `notes.txt`.                              | Use `rm -r` for directories. Be careful—no recycle bin. |
+|   9   | `cat`       | Display file contents.                     | `cat <file>`                  | `cat report.txt`        | Prints the file contents.                         | Useful for small text files.                            |
+|   10  | `less`      | View large files page by page.             | `less <file>`                 | `less report.txt`       | Opens an interactive viewer.                      | Press **q** to quit.                                    |
+|   11  | `head`      | Show the first lines of a file.            | `head <file>`                 | `head report.txt`       | Displays the first 10 lines.                      | Use `-n` to specify the number of lines.                |
+|   12  | `tail`      | Show the last lines of a file.             | `tail <file>`                 | `tail report.txt`       | Displays the last 10 lines.                       | `tail -f logfile.log` monitors a log file in real time. |
+|   13  | `find`      | Search for files or directories.           | `find <path> -name <pattern>` | `find . -name "*.txt"`  | Lists all `.txt` files.                           | Searches recursively.                                   |
+|   14  | `locate`    | Find files using a pre-built database.     | `locate <filename>`           | `locate passwd`         | Shows matching file paths.                        | Run `sudo updatedb` if the database is outdated.        |
+|   15  | `tree`      | Display the directory structure as a tree. | `tree <directory>`            | `tree CyberLab`         | Prints the folder hierarchy.                      | Install using `sudo apt install tree`.                  |
 
 ---
-
-## 2. ls
-
-### Purpose
-
-Lists files and directories.
-
-### Syntax
-
-```bash
-ls
-```
-
-### Example
-
-```bash
-ls -la
-```
-
-### Output
-
-```text
-drwxr-xr-x notes
-drwxr-xr-x reports
-...
-```
-
-### Notes
-
-- `-l` → Long format
-- `-a` → Hidden files
-
+# Frequently Used Options
+---
+| **Option** | **Description**                     | **Example**            |
+| :--------: | :---------------------------------- | :--------------------- |
+|    `-a`    | Show hidden files                   | `ls -a`                |
+|    `-l`    | Long listing format                 | `ls -l`                |
+|    `-la`   | Long listing including hidden files | `ls -la`               |
+|    `-r`    | Recursive operation                 | `cp -r folder backup/` |
+|    `-f`    | Follow file updates (tail)          | `tail -f logfile.log`  |
+|    `-n`    | Specify number of lines             | `head -n 20 file.txt`  |
+|    `-p`    | Create parent directories           | `mkdir -p notes/linux` |
 ---
 
-## 3. cd
 
-### Purpose
-
-Changes the current directory.
-
-### Syntax
-
-```bash
-cd directory_name
-```
-
-### Example
-
-```bash
-cd reports
-```
-
-### Output
-
-```text
-(Current directory changed)
-```
-
-### Notes
-
-```bash
-cd ..
-```
-
-Moves one directory up.
-
----
-
-## 4. mkdir
-
-### Purpose
-
-Creates a new directory.
-
-### Syntax
-
-```bash
-mkdir directory_name
-```
-
-### Example
-
-```bash
-mkdir backup
-```
-
-### Output
-
-```text
-(No output if successful)
-```
-
----
-
-## 5. touch
-
-### Purpose
-
-Creates an empty file.
-
-### Syntax
-
-```bash
-touch filename
-```
-
-### Example
-
-```bash
-touch notes.txt
-```
-
----
-
-## 6. cp
-
-### Purpose
-
-Copies files or directories.
-
-### Syntax
-
-```bash
-cp source destination
-```
-
-### Example
-
-```bash
-cp notes.txt backup/
-```
-
----
-
-## 7. mv
-
-### Purpose
-
-Moves or renames files.
-
-### Syntax
-
-```bash
-mv source destination
-```
-
-### Example
-
-```bash
-mv notes.txt reports/
-```
-
----
-
-## 8. rm
-
-### Purpose
-
-Deletes files or directories.
-
-### Syntax
-
-```bash
-rm filename
-```
-
-### Example
-
-```bash
-rm notes.txt
-```
-
-### Remove Directory
-
-```bash
-rm -r projects
-```
-
----
-
-## 9. cat
-
-### Purpose
-
-Displays the contents of a file.
-
-### Example
-
-```bash
-cat report.txt
-```
-
----
-
-## 10. less
-
-### Purpose
-
-Views long files page by page.
-
-### Example
-
-```bash
-less report.txt
-```
-
-### Useful Keys
-
-| Key | Action |
-|------|--------|
-| Space | Next Page |
-| b | Previous Page |
-| q | Quit |
-
----
-
-## 11. head
-
-### Purpose
-
-Displays the first 10 lines of a file.
-
-### Example
-
-```bash
-head report.txt
-```
-
----
-
-## 12. tail
-
-### Purpose
-
-Displays the last 10 lines of a file.
-
-### Example
-
-```bash
-tail report.txt
-```
-
-### Live Monitoring
-
-```bash
-tail -f logfile.log
-```
-
----
-
-## 13. find
-
-### Purpose
-
-Searches for files and directories.
-
-### Example
-
-```bash
-find . -name "*.txt"
-```
-
----
-
-## 14. locate
-
-### Purpose
-
-Searches files using a database.
-
-### Example
-
-```bash
-locate passwd
-```
-
-> Update the database first if needed:
-
-```bash
-sudo updatedb
-```
-
----
-
-## 15. tree
-
-### Purpose
-
-Displays the directory structure in a tree format.
-
-### Example
-
-```bash
-tree CyberLab
-```
-
-### Sample Output
-
-```text
-CyberLab
-├── logs
-├── notes
-├── projects
-├── reports
-└── scripts
-```
-
----
-
-# Lab Exercises Completed
-
-- [x] Created CyberLab directory
-- [x] Created subdirectories
-- [x] Installed tree
-- [x] Practiced pwd
-- [x] Practiced ls
-- [x] Practiced cd
-- [x] Practiced mkdir
-- [x] Practiced touch
-- [x] Practiced cp
-- [x] Practiced mv
-- [x] Practiced rm
-- [x] Practiced cat
-- [x] Practiced less
-- [x] Practiced head
-- [x] Practiced tail
-- [x] Practiced find
-- [x] Practiced locate
-- [x] Generated tree output
+# Commands Practiced During the Lab
+
+| **Task**              | **Command**                                 |
+| :-------------------- | :------------------------------------------ |
+| Create CyberLab       | `mkdir CyberLab`                            |
+| Enter CyberLab        | `cd CyberLab`                               |
+| Create subdirectories | `mkdir notes scripts reports projects logs` |
+| Create a file         | `touch notes/readme.txt`                    |
+| Copy a file           | `cp notes/readme.txt reports/`              |
+| Move a file           | `mv reports/readme.txt logs/`               |
+| Delete a file         | `rm logs/readme.txt`                        |
+| Search a file         | `find . -name "*.txt"`                      |
+| View folder structure | `tree CyberLab`                             |
 
 ---
 
@@ -457,16 +143,6 @@ CyberLab
 
 ---
 
-# Git Commands
-
-```bash
-git add .
-
-git commit -m "Linux Filesystem Completed"
-
-git push
-```
-
 ---
 
 # Deliverable
@@ -474,13 +150,13 @@ git push
 **File Name**
 
 ```text
-linux-cheatsheet.md
+Day-2.md
 ```
 
 **Repository**
 
 ```text
-cybersecurity-notes
+CyberSecurity
 ```
 
 **Status**
